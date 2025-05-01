@@ -27,5 +27,17 @@
     }
     console.log(mentorList);
 
+ //Rest Operator:
+ const friends = (friend1: string, friend2: string,friend3: string)=>{
+    console.log(`Hi ${friend1} ${friend2} ${friend3}`);
+ }
+ friends("Abut", "Kabul","Tabul", )
+
+ const greetingFriends = (...friends: string[])=>{
+    friends.forEach((friend: string)=> console.log(`Hi ${friend}`))
+ }
+ greetingFriends("Abut", "Kabul","Tabul","Ubul","Rasel", "Shahidul", "Majed", "Rabbi" )
+
+
 
 }
