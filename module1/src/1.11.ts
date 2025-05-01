@@ -19,4 +19,29 @@
     const result1 = isAuthenticated ?? 'Geust'
     const result2 = isAuthenticated ? isAuthenticated : "Geust";
     console.log({result1}, {result2});
+
+    type User = {
+        name: string;
+        address: {
+            city: string;
+            villege: string;
+            parmanentAddress?: string;
+            presentAddress: string;
+        }
+    }
+
+    const user : User = {
+        name: 'Nazrul Islam',
+        address:{
+            city: 'Dhaka',
+            villege: 'Uttarchar',
+            presentAddress: "Dhaka"
+        }
+    }
+
+   const resut =  user.address.parmanentAddress;
+
+   console.log({resut});
+
+
 }
