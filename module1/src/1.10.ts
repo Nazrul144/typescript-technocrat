@@ -2,6 +2,16 @@
     //Union Types:
 
     type FrontendDeveloper = 'fakibazDeveloper' | 'juniorDeveloper'
+    type FullStackDeveloper = 'frontendDeveloper' | 'FullStackDeveloper'
+
+
+    type Developer = FrontendDeveloper & FullscreenNavigationUI;
+
+   
+
+
+
+
 
     const newDeveloper: FrontendDeveloper = 'fakibazDeveloper'
 
