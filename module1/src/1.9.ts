@@ -20,5 +20,11 @@
         phone: '01710326590'
     }
 
+    type UserName = string;
+    type IsAdmin = boolean;
+
+    const userName: UserName = 'Nazrul Islam';
+    const isAdmin: IsAdmin = true;
+
 
 }
