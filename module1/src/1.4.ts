@@ -18,7 +18,18 @@ let b: undefined = undefined;
 
 let k: number;
 
-k = 123;
-k = 'nazrul'  // Type 'string' is not assignable to type 'number'
+
+// Non-Primitive Data type:
+
+//Array:
+let number: number[] = [1,2,3,4,5];
+let friends: string[] = ['Rahim', 'Karim', 'Jadu', 'Modu', 'Kadu'];
+
+//Tuple: Tuple is a kind of array but here the order is maintained.
+
+let coordinate: [number, number] = [10, 20];
+let personDetails: [string, number, boolean] = ['Nazrul', 30, true]
+
+
 
 }
