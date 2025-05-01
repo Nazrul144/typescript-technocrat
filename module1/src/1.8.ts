@@ -9,10 +9,16 @@
         lastName: 'Islam',
         },
         constactInfo: "01758752528",
-        address: 'Dhaka'
+        address: 'Dhaka',
+        age: 30
     }
 
-const {constactInfo} = user;
+const {constactInfo: contactInformation, name:{lastName}} = user;
 
-console.log(constactInfo);
+console.log(contactInformation, lastName);
+
+
+
+
+
 }
