@@ -5,7 +5,7 @@
     type FullStackDeveloper = 'frontendDeveloper' | 'FullStackDeveloper'
 
 
-    type Developer = FrontendDeveloper & FullscreenNavigationUI;
+    type Developer = FrontendDeveloper | FullscreenNavigationUI;
 
    
 
@@ -27,6 +27,25 @@
         age: 30,
         gender: 'male'
     }
+
+    //Intersection Type:
+    type FrontendDevelopers = {
+        skills: string[],
+        degination1: 'frontendDeveloper'
+    }
+    type BackendDevelopers = {
+        skills: string[],
+        degination2: 'backendDeveloper'
+    }
+
+    type FullStackDevelopers = FrontendDevelopers & BackendDevelopers;
+
+    const fullStackDevelopers : FullStackDevelopers = {
+        skills : ['HTML', 'CSS', 'React'],
+        degination1: 'frontendDeveloper',
+        degination2: 'backendDeveloper'
+    }
+
 
 
 }
