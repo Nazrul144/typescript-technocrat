@@ -5,10 +5,8 @@
 {
 
     //Spread Operator:
-    const num1 = [1,2,3,4];
-    const num2 = [5,6,7,8];
+    const bros1: string[] = ['Mizan', 'Raju', 'Rahad'];
+    const bros2: string[] = ['Tarek', 'Sojib', 'Rakib'];
 
-    const mainArr = [...num1,...num2]
-    console.log(mainArr);
-
+    bros1.push(...bros2)
 }
