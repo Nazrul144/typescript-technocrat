@@ -16,5 +16,9 @@ let a: null = null;
 //Undefined Data Type:
 let b: undefined = undefined;
 
+let k: number;
+
+k = 123;
+k = 'nazrul'  // Type 'string' is not assignable to type 'number'
 
 }
