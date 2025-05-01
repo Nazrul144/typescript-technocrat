@@ -39,7 +39,7 @@
         }
     }
 
-   const resut =  user.address.parmanentAddress;
+   const resut =  user?.address?.parmanentAddress ?? "No parmanentAddress address is found"
 
    console.log({resut});
 
