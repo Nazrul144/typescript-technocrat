@@ -27,6 +27,9 @@
 
 // const newArr: number[] = arr.map((element: number): number => element*element)
 
-const add = (num1: number, num2:number): number=> num1 + num2;
 
-add(10,20)
+const numbers:number[] = [1,2,3,4,5];
+
+const totalResult = numbers.reduce((acc: number, current: number): number=> acc + current, 0)
+
+console.log(totalResult);
