@@ -57,4 +57,4 @@ const friends = (...a:string[])=>{
     console.log(a);
 }
 
-friends("Mizan", "Ratul", "Tarek", "Josim","Foysal","Jahid")
+friends("Mizan", "Ratul", "Tarek", "Josim","Foysal","Jahid", "Razon")
