@@ -45,8 +45,16 @@
 
 //Spread Operator:
 
-const friend1 = ['Rahim', 'Karim'];
-const friend2 = ['Jadu', 'Modu'];
+const friend1:string[] = ['Rahim', 'Karim'];
+const friend2:string[] = ['Jadu', 'Modu'];
 
-const newArray = [...friend1,...friend2]
+const newArray:string[] = [...friend1,...friend2]
 console.log(newArray);
+
+//Rest Operator:
+
+const friends = (...a:string[])=>{
+    console.log(a);
+}
+
+friends("Mizan", "Ratul", "Tarek", "Josim","Foysal","Jahid")
