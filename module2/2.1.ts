@@ -9,10 +9,10 @@
 
     const kgToGm = (value: string | number)=>{
         if(typeof value === 'string'){
-            const convertedNumber = parseFloat(value);
+            const convertedNumber = parseFloat(value)*1000;
             return convertedNumber;
         }else{
-            return value;
+            return value*1000;
         }
     }
 }
