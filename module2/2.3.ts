@@ -1,7 +1,7 @@
 {
     //Generic 
     
-    type GenericType<param> = Array<param>
+    type GenericType<T> = Array<T>
 
 
 
@@ -13,6 +13,19 @@
 
     const boolArr : Array<boolean> = [true, false, true];   //Not generalized
     const boolArr1 : GenericType<boolean> = [true, false, true];  //Generalized array
+
+
+    const user :GenericType<{name: string, id: number}> = [
+        {
+            name: 'Nazrul',
+            id: 1
+        },
+        {
+            name: 'Jankar Mahabub',
+            id: 2,
+        },
+        
+    ]
 
 
 
