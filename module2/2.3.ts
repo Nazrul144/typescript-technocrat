@@ -27,6 +27,18 @@
         
     ]
 
+    //Tuple:
+
+    const person : [string, number] = ['Nazrul', 20]
+
+    //Generic Tuple:
+    type GenericTuple<X,T> = [X, T];
+
+    const manush : GenericTuple<string, string> = ['Mr.X', 'Mr.Y']
+
+
+    const userID : GenericTuple<number, {name: string, age: 20}> = [123, {name: 'Nazrul', age: 20}]
+
 
 
 
