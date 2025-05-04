@@ -1,22 +1,16 @@
 {
     //Interface
-   type User1 = {
-    name: string,
-    age: number
-   }
+    type User1 = {
+        name: string;
+        age: number
+    }
 
-   const person : User1 = {
-    name: 'Nazrul',
-    age: 20
-   }
+    type UserWithRoll = User1 & {roll: number};
 
-   interface User2 {
-    id: number,
-    email: string
-   }
+    const student : UserWithRoll = {
+        name: "Nazrul Islam",
+        age: 20,
+        roll: 1,
 
-   const person1 : User2 ={
-    id: 1,
-    email: 'nazrulislam.cse28@gmail.com'
-   }
+    }
 }
