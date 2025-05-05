@@ -1,13 +1,14 @@
 {
     //Generic with interface:
-    interface Developer<T> {
+    interface Developer<T, Y = null> {
         name: string,
         computer: {
             brand: string,
             model: string
             releaseYear: number
         }
-        smartWatch: T
+        smartWatch: T,
+        bike?: Y
     }
 
     type EmilateWatch = {
@@ -40,7 +41,12 @@
     }
 
 
-    const richDeveloper : Developer<RichWtach> = {
+    interface Yeamaha {
+        model: string,
+        color: string
+    }
+
+    const richDeveloper : Developer<RichWtach, Yeamaha> = {
         name: 'Jankar Mahabub',
         computer:{
             brand: 'Apple',
@@ -53,6 +59,10 @@
             display: "Emulate",
             heartTrack: true,
             sleepTrack: true
+        },
+        bike: {
+            model: "P11",
+            color: "blue"
         }
     }
 
