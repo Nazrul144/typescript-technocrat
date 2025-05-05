@@ -31,4 +31,16 @@
         contactNo: "017"
     }
     
+    // type Myobj = {
+    //     a: string;
+    //     b: string
+    // }
+
+    type Myobj = Record<string, string>
+
+    const obj1 : Myobj = {
+        a : "Nazrul",
+        b: "Islam",
+        c: "20"
+    }
 }
