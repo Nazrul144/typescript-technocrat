@@ -24,8 +24,7 @@
     hasWatch: string;
   }>({ id: 2, name: "Mr.Y", email: "y@gmail.com", hasWatch: "Olive" });
 
-  console.log(student1);
-  console.log(student2);
+  const student3 = addCourseToStudent({name: 'emni'})
 
   //
 }
