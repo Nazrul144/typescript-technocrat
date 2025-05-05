@@ -22,9 +22,12 @@
     name: string;
     email: string;
     hasWatch: string;
-  }>({ id: 2, name: "Mr.Y", email: "y@gmail.com", hasWatch: "Olive" });
+  }>({ id: 2,
+     name: "Mr.Y",
+      email: "y@gmail.com",
+       hasWatch: "Olive" });
 
-  const student3 = addCourseToStudent({name: 'emni'})
+  const student3 = addCourseToStudent({id: 12, name: 'Nazrl', email: 'n@gmail.com', address: 'Dhaka'})
 
   //
 }
