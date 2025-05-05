@@ -14,4 +14,7 @@
 
     //Required:
     type NewRequired = Required<Person>
+
+    //Partial:
+    type PersonPartial = Partial<Person>
 }
