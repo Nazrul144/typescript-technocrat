@@ -8,8 +8,14 @@
 
     type y = a1 extends null ? true : b1 extends undefined ? undefined : any
 
-    type CheckVehicle<T> = T extends "car" | "bike" | "ship" ? true : false
+    type Sheikh = {
+        bike: string;
+        car: string;
+        ship: string;
+    }
 
-    type HasCar = CheckVehicle<"car">
+    type CheckVehicle<T> = T extends keyof Sheikh ? true : false
+
+    type HasCar = CheckVehicle<"abc">
 
 }
