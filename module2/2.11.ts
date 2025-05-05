@@ -43,4 +43,7 @@
         b: "Islam",
         c: "20"
     }
+
+    //Empty object:
+    const emptyObj : Record<string, unknown> = {}
 }
