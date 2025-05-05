@@ -36,8 +36,11 @@
 
     const manush : GenericTuple<string, string> = ['Mr.X', 'Mr.Y']
 
-
-    const userID : GenericTuple<number, {name: string, age: 20}> = [123, {name: 'Nazrul', age: 20}]
+    type User = {
+        name: string,
+        age: number
+    }
+    const userID : GenericTuple<number, User> = [123, {name: 'Nazrul', age: 20}]
 
 
 
