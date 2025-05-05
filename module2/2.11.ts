@@ -17,4 +17,18 @@
 
     //Partial:
     type PersonPartial = Partial<Person>
+
+    //Readonly:
+    type Personreadonly = {
+
+    }
+
+    type PersonReadonly = Readonly<Person>
+
+    const person1 : PersonReadonly = {
+        name: "Nazrul",
+        age: 20,
+        contactNo: "017"
+    }
+    
 }
