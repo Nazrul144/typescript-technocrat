@@ -8,4 +8,6 @@
     }
 
     type NameAge = Pick<Person, "name" | "age"> //We can pick some object property with value by Pick keyword and make a new object.
+
+    type contactInfo = Omit<Person, "name" | "contactNo">
 }
