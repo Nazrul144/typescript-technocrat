@@ -9,7 +9,7 @@
         eyeColor: string;
         income: number;
         expense: number;
-        hobbies: string;
+        hobbies: string[]
         familyMembers: number;
         job: string;
         skills: string[];
@@ -24,7 +24,7 @@
         eyeColor: "Black",
         income: 0,
         expense: 6000,
-        hobbies: "Football, Cricket, Chess, Card",
+        hobbies: ["Football", "Cricket", "Tanis", "Chess", "Card"],
         familyMembers: 3,
         job: "None",
         skills: ["Js", "React", "Node", "Express", "MongoDB"],
