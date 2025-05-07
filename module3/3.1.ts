@@ -11,4 +11,14 @@
             this.sound = sound;
         }
     }
+
+    const dog = new Animal("German shelfield", "Dog", "Geaw Geaw")
+    const cat = new Animal("American catfield", "Cat", "Mew Mew")
+
+    
+
+
+
+
+
 }
