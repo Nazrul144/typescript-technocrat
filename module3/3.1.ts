@@ -10,6 +10,10 @@
             this.species = species;
             this.sound = sound;
         }
+
+        makeSound(){
+            console.log(`The ${this.name} says ${this.sound}`);
+        }
     }
 
     const dog = new Animal("German shelfield", "Dog", "Geaw Geaw")
