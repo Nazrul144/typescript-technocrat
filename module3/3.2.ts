@@ -1,6 +1,7 @@
 {
     //oop -> inheritance:
-    class Student {
+
+    class Parent {
         name: string;
         age: number;
         address: string;
@@ -13,6 +14,14 @@
 
         getSleep(sleepOfHour : number){
             console.log(`${this.name} will sleep ${sleepOfHour}`);
+        }
+    }
+
+    class Student extends Parent {
+        
+
+        constructor(name: string, age: number, address: string){
+            super(name, age, address)
         }
        
     }
