@@ -27,23 +27,15 @@
     }
 
     const studnet1 = new Student("Nazrul Islam", 30, "Dhaka")
-    studnet1.getSleep(10)
+    studnet1.address()
 
-    class Teacher {
-        name: string;
-        age: number;
-        address: string;
+    class Teacher extends Parent {
+       
         designation: string
 
         constructor(name: string, age: number, address: string, designation: string){
-            this.name = name;
-            this.age = age;
-            this.address = address;
+            super(name, age, address)
             this.designation = designation;
-        }
-
-        getSleep(sleepOfHour : number){
-            console.log(`${this.name} will sleep ${sleepOfHour}`);
         }
 
         takeClass(numberOfTakeClass : number){
@@ -53,7 +45,7 @@
     }
 
     const teacher = new Teacher("Mr. Kabir", 40, "Dhaka", "Professior")
-    teacher.takeClass(3)
+    teacher.
 
 
 
